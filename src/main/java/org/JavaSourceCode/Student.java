@@ -3,11 +3,15 @@ package org.JavaSourceCode;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+
 @Component
 public class Student implements Person {
 
+
+
     private int id;
     private String name;
+
     private ArrayList<Phone> ph;
     private Address add;
     public Student(int id, String name, ArrayList<Phone> ph, Address add) {
@@ -16,6 +20,11 @@ public class Student implements Person {
         this.ph = ph;
         this.add = add;
     }
+
+    public Student() {
+
+    }
+
 
     public void setAddress(Address add) {
         this.add = add;

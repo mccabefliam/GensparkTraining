@@ -1,7 +1,7 @@
 package org.JavaSourceCode;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
  * Hello world!
@@ -14,8 +14,8 @@ public class App
        // BeanFactory
         // ApplicationContext
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("Spring.xml");
-           Person obj = (Person)context.getBean("student");
+        ApplicationContext context = new AnnotationConfigApplicationContext(CollectionConfig.class);
+           Person obj = (Student)context.getBean(Student.class);
            obj.getID();
            obj.getName();
            obj.getPhone();
