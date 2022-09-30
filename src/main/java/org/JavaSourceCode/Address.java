@@ -2,7 +2,7 @@ package org.JavaSourceCode;
 
 import org.springframework.stereotype.Component;
 
-@Component
+
 public class Address {
 
     public String city;

@@ -14,7 +14,7 @@ public class App
        // BeanFactory
         // ApplicationContext
 
-        ApplicationContext context = new AnnotationConfigApplicationContext(CollectionConfig.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
            Person obj = (Student)context.getBean(Student.class);
            obj.getID();
            obj.getName();

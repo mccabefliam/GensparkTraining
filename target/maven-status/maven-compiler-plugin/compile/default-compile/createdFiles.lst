@@ -2,11 +2,13 @@ org\JavaSourceCode\Student.class
 org\JavaSourceCode\Person.class
 org\XML\Person.class
 org\JavaAnnotations\Address.class
+org\JavaSourceCode\Helper.class
 org\XML\Address.class
 org\JavaAnnotations\Phone.class
 org\JavaSourceCode\Address.class
 org\JavaSourceCode\Phone.class
 org\XML\Student.class
+org\JavaSourceCode\AppConfig.class
 org\XML\App.class
 org\JavaAnnotations\Student.class
 org\XML\Phone.class

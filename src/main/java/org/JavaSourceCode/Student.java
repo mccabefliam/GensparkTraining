@@ -1,20 +1,27 @@
 package org.JavaSourceCode;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-@Component
+
 public class Student implements Person {
 
-
-
+    @Value("#{12}")
     private int id;
+    @Value("#{'Liam McCabe'}")
     private String name;
 
-    private ArrayList<Phone> ph;
+    private List<Phone> ph;
+
+   // @Value("#{T(org.JavaSourceCode.Address).this('Atlanta','GA','USA','30305')}")
+    @Value("#{new org.JavaSourceCode.Address('Atlanta','GA','USA','30305')}")
     private Address add;
-    public Student(int id, String name, ArrayList<Phone> ph, Address add) {
+    public Student(int id, String name, List<Phone> ph, Address add) {
         this.id = id;
         this.name = name;
         this.ph = ph;
